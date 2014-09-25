@@ -1,0 +1,44 @@
+<div class="container">
+    <h1>Create a new artist</h1>
+
+    <form novalidate="novalidate" class="form-horizontal">
+        <div class="control-group">
+            <label class="control-label" for="inputFirstName">name:</label>
+
+            <div class="controls">
+                <input type="text" id="inputFirstName" ng-model="artist.firstName" placeholder="name"/>
+            </div>
+			
+			
+        </div>
+		 <div class="control-group">
+            <label class="control-label" for="inputbackground_image">background_image:</label>
+
+            <div class="controls">
+                <input type="text" id="inputbackground_image" ng-model="artist.background_image" placeholder="background_image"/>
+            </div>
+        </div>
+      <div class="control-group">
+            <label class="control-label" for="inputprofile_image">profile_image:</label>
+
+            <div class="controls">
+                <input type="text" id="inputprofile_image" ng-model="artist.profile_image" placeholder="profile_image"/>
+            </div>
+        </div>
+	  
+	   <div class="control-group">
+            <label class="control-label" for="inputgenre">genre:</label>
+
+            <div class="controls">
+                <input type="text" id="inputgenre" ng-model="artist.genre" placeholder="genre"/>
+            </div>
+        </div>
+	  
+	  
+        <div class="control-group">
+            <div class="controls">
+                <a ng-click="createNewArtist()" class="btn btn-small btn-primary">create new artist</a>
+            </div>
+        </div>
+    </form>
+</div>
